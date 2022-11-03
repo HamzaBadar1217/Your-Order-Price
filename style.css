@@ -1,0 +1,129 @@
+body {
+  overflow-x: hidden;
+}
+.navbar {
+  background-color: #4fa5bc;
+}
+
+.breadcrumb-clear {
+  --bs-breadcrumb-divider: "";
+  height: 65px;
+  background-color: white;
+}
+
+.breadcrumb li {
+  padding: 0.05em 0.25em;
+  float: left;
+  font-size: 0.775em;
+  list-style-type: none;
+}
+
+.breadcrumb li:after {
+  content: ">>";
+  display: inline;
+  font-size: 0.565em;
+  color: #aaa;
+  position: relative;
+  bottom: 2px;
+  margin: auto 0 auto 1.5em;
+}
+
+.breadcrumb li:last-child:after {
+  content: "";
+}
+
+.text-decoration-none {
+  font-weight: 500;
+}
+
+.active {
+  color: #109bc2;
+}
+
+.inactive {
+  color: #93d1e2;
+}
+
+.container-fluid {
+  /* background-color: #f1f6f9; */
+  height: 100%;
+}
+
+.icon-image {
+  width: 500px;
+  height: 500px;
+}
+
+.column-1 {
+  padding: 100px 0 100px 0;
+}
+
+.main-icon {
+  color: #ee8d7d;
+  font-size: 7em;
+}
+
+.shadow-icon {
+  color: #f4dadb;
+  font-size: 3em;
+  -ms-transform: rotate(-3deg);
+  /* IE 9 */
+  transform: rotate(-3deg);
+}
+
+.title-container {
+  width: 55%;
+}
+
+.title {
+  font-family: Inter, "sans-serif";
+  font-size: 1.8em;
+  font-weight: 900;
+}
+
+.description {
+  font-family: Inter, "sans-serif";
+  font-size: 0.875em;
+  color: rgb(165, 165, 165);
+}
+
+.important-desc {
+  font-weight: 600;
+  color: #109bc2;
+}
+
+.qty {
+  color: #109bc2;
+  font-size: 0.95em;
+}
+
+.price {
+  color: #109bc2;
+  font-size: 0.95em;
+}
+
+.input-qty {
+  width: 20%;
+}
+
+tr th {
+  color: rgb(199, 199, 199);
+  font-weight: 500;
+}
+
+.qty-num {
+  color: #70c2f1;
+  font-weight: 700;
+}
+
+.item-name {
+  font-family: Inter, "sans-serif";
+  font-weight: 700;
+  color: rgb(80, 80, 80);
+}
+
+.item-price {
+  font-family: Inter, "sans-serif";
+  font-weight: 700;
+  color: #ee8d7d;
+}
