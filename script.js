@@ -78,39 +78,56 @@ function openVestDropdown() {
 }
 
 function cake() {
-  cakeQtyText.innerText = cakeQty.value;
+  if (cakeQty.value.match(/\-?\d+\.\d+/) || cakeQty.value === '')  {
+    alert("Kindly add integer value");
+  } else {
+    cakeQtyText.innerText = cakeQty.value;
 
-  totalPriceSliced += parseInt(cakeQty.value) * parseFloat(cakePrice.value);
+    totalPriceSliced += parseInt(cakeQty.value) * parseFloat(cakePrice.value);
 
-  totalPrice.innerText = `$ ${parseFloat(totalPriceSliced).toFixed(2)}`;
+    totalPrice.innerText = `$ ${parseFloat(totalPriceSliced).toFixed(2)}`;
+  }
+
 }
 
 function cups() {
-  cupsQtyText.innerText = cupsQty.value;
+  if (cupsQty.value.match(/\-?\d+\.\d+/) || cupsQty.value === '') {
+    alert("Kindly add integer value");
+  } else {
+    cupsQtyText.innerText = cupsQty.value;
 
-  totalPriceSliced += parseInt(cupsQty.value) * parseFloat(cupsPrice.value);
+    totalPriceSliced += parseInt(cupsQty.value) * parseFloat(cupsPrice.value);
 
-  totalPrice.innerText = `$ ${parseFloat(totalPriceSliced).toFixed(2)}`;
+    totalPrice.innerText = `$ ${parseFloat(totalPriceSliced).toFixed(2)}`;
+  }
 }
 
 function beer() {
-  beerQtyText.innerText = beerQty.value;
+  if (beerQty.value.match(/\-?\d+\.\d+/) || beerQty.value === '') {
+    alert("Kindly add integer value");
+  } else {
+    beerQtyText.innerText = beerQty.value;
 
-  totalPriceSliced += parseInt(beerQty.value) * parseFloat(beerPrice.value);
+    totalPriceSliced += parseInt(beerQty.value) * parseFloat(beerPrice.value);
 
-  totalPrice.innerText = `$ ${parseFloat(totalPriceSliced).toFixed(2)}`;
+    totalPrice.innerText = `$ ${parseFloat(totalPriceSliced).toFixed(2)}`;
+  }
 }
 
 function beef() {
-  beefQtyText.innerText = beefQty.value;
+  if (beefQty.value.match(/\-?\d+\.\d+/) || beefQty.value === '') {
+    alert("Kindly add integer value");
+  } else {
+    beefQtyText.innerText = beefQty.value;
 
-  totalPriceSliced += parseInt(beefQty.value) * parseFloat(beefPrice.value);
+    totalPriceSliced += parseInt(beefQty.value) * parseFloat(beefPrice.value);
 
-  totalPrice.innerText = `$ ${parseFloat(totalPriceSliced).toFixed(2)}`;
+    totalPrice.innerText = `$ ${parseFloat(totalPriceSliced).toFixed(2)}`;
+  }
 }
 
 function vest() {
-  if (vestQty.value.match(/\-?\d+\.\d+/)) {
+  if (vestQty.value.match(/\-?\d+\.\d+/) || vestQty.value === '') {
     alert("Kindly add integer value");
   } else {
     vestQtyText.innerText = vestQty.value;
@@ -122,9 +139,7 @@ function vest() {
 }
 
 function orderPlaced() {
-  if (
-    totalPrice.innerText === '$0.00'
-  ) {
+  if (totalPrice.innerText === "$0.00") {
     alert("You didn't select a single item");
   } else {
     alertbox.classList.remove("d-none");

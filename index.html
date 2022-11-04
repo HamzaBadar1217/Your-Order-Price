@@ -16,10 +16,11 @@
             <h4 class="alert-heading">Order Successfully Placed</h4>
             <i class="fa-solid fa-check-double fa-2x" style="color: #408667;"></i>
         </div>
-        <p>You order has been placed Successfully. It will be delivered within 3 working days. After then you can open a fire on birthday boy.</p>
+        <p>You order has been placed Successfully. It will be delivered within 3 working days. After then you can open a
+            fire on birthday boy.</p>
         <hr>
         <p class="mb-0">We'll wait for your next order. Thank you!</p>
-      </div>
+    </div>
     <nav class="navbar navbar-expand-lg">
         <div class="container d-flex justify-content-between align-items-center" style="padding: 0 25%;">
             <a class="navbar-brand" href="#" style="font-size: 0.912em; color: #bee8f3">Your online store</a>
@@ -31,7 +32,7 @@
         </div>
         </div>
     </nav>
-    <nav class="breadcrumb-clear d-flex justify-content-center" aria-label="breadcrumb" >
+    <nav class="breadcrumb-clear d-flex justify-content-center" aria-label="breadcrumb">
         <ol class="breadcrumb my-auto py-auto">
             <li class="breadcrumb-item"><a class="text-decoration-none inactive text-uppercase" href="#">review</a></li>
             <li class="breadcrumb-item" aria-current="page"><a class="text-decoration-none active text-uppercase"
@@ -90,19 +91,24 @@
                         </tr>
                         <tr scope="row" id="birthdayCakeDropdown" class="bg-white border-top d-none">
                             <td colspan="9" class="py-4">
-                                <form action="" id="cakeForm" class="d-flex justify-content-between mx-5">
-                                    <div>
-                                        <label for="cake-qty" class="fw-bold pb-2 qty">Quantity</label>
-                                        <input type="number" class="form-control input-qty" id="cake-qty" min="0"
-                                            max="5" value="0" style="width: 200px;" onchange="cake()" />
-                                    </div>
+                                <form action="" id="cakeForm">
+                                    <div class="row">
+                                        <div class="col-xl-6 mb-3">
+                                            <label for="cake-qty" class="fw-bold pb-2 qty">Quantity</label>
+                                            <input type="number" class="form-control input-qty text-center mx-auto"
+                                                id="cake-qty" min="0" max="5" value="0" style="width: 200px;"
+                                                onchange="cake()" />
+                                        </div>
 
-                                    <div>
-                                        <label for="cake-price" class="fw-bold text-start pb-2 price">Price</label>
-                                        <input type="number" id="cake-price" class="form-control input-qty"
-                                            value="49.95" disabled style="width: 200px;" />
+                                        <div class="col-xl-6 mb-3">
+                                            <label for="cake-price" class="fw-bold text-start pb-2 price">Price</label>
+                                            <input type="number" id="cake-price"
+                                                class="form-control input-qty text-center mx-auto" value="49.95"
+                                                disabled style="width: 200px;" />
+                                        </div>
                                     </div>
                                 </form>
+
 
                                 <div class="my-3 mx-4">
                                     <img class="img-fluid" src="./images/Birthday-Cake.webp" alt="Birthday Cake"
@@ -132,17 +138,21 @@
                         </tr>
                         <tr scope="row" id="partyCupsDropdown" class="bg-white border-top d-none">
                             <td colspan="9" class="py-4">
-                                <form action="" id="cupsForm" class="d-flex justify-content-between mx-5">
-                                    <div>
-                                        <label for="cups-qty" class="fw-bold pb-2 qty">Quantity</label>
-                                        <input type="number" class="form-control input-qty" id="cups-qty" min="0"
-                                            max="5" value="0" style="width: 200px;" onchange="cups()" />
-                                    </div>
+                                <form action="" id="cupsForm">
+                                    <div class="row">
+                                        <div class="col-xl-6 mb-3">
+                                            <label for="cups-qty" class="fw-bold pb-2 qty">Quantity</label>
+                                            <input type="number" class="form-control input-qty text-center mx-auto"
+                                                id="cups-qty" min="0" max="5" value="0" style="width: 200px;"
+                                                onchange="cups()" />
+                                        </div>
 
-                                    <div>
-                                        <label for="cups-price" class="fw-bold text-start pb-2 price">Price</label>
-                                        <input type="number" id="cups-price" class="form-control input-qty" value="5.00"
-                                            disabled style="width: 200px;" />
+                                        <div class="col-xl-6 mb-3">
+                                            <label for="cups-price" class="fw-bold text-start pb-2 price">Price</label>
+                                            <input type="number" id="cups-price"
+                                                class="form-control input-qty text-center mx-auto" value="5.00" disabled
+                                                style="width: 200px;" />
+                                        </div>
                                     </div>
                                 </form>
 
@@ -174,17 +184,21 @@
                         </tr>
                         <tr scope="row" id="beerKegsDropdown" class="bg-white border-top d-none">
                             <td colspan="9" class="py-4">
-                                <form action="" id="beerForm" class="d-flex justify-content-between mx-5">
-                                    <div>
-                                        <label for="beer-qty" class="fw-bold pb-2 qty">Quantity</label>
-                                        <input type="number" class="form-control input-qty" id="beer-qty" min="0"
-                                            max="5" value="0" style="width: 200px;" onchange="beer()" />
-                                    </div>
+                                <form action="" id="beerForm">
+                                    <div class="row">
+                                        <div class="col-xl-6 mb-3">
+                                            <label for="beer-qty" class="fw-bold pb-2 qty">Quantity</label>
+                                            <input type="number" class="form-control input-qty mx-auto text-center"
+                                                id="beer-qty" min="0" max="5" value="0" style="width: 200px;"
+                                                onchange="beer()" />
+                                        </div>
 
-                                    <div>
-                                        <label for="beer-price" class="fw-bold text-start pb-2 price">Price</label>
-                                        <input type="number" id="beer-price" class="form-control input-qty"
-                                            value="919.99" disabled style="width: 200px;" />
+                                        <div class="col-xl-6 mb-3">
+                                            <label for="beer-price" class="fw-bold text-start pb-2 price">Price</label>
+                                            <input type="number" id="beer-price"
+                                                class="form-control input-qty mx-auto text-center" value="919.99"
+                                                disabled style="width: 200px;" />
+                                        </div>
                                     </div>
                                 </form>
 
@@ -216,17 +230,21 @@
                         </tr>
                         <tr scope="row" id="beefDropdown" class="bg-white border-top d-none">
                             <td colspan="9" class="py-4">
-                                <form action="" id="beefForm" class="d-flex justify-content-between mx-5">
-                                    <div>
-                                        <label for="beef-qty" class="fw-bold pb-2 qty">Quantity</label>
-                                        <input type="number" class="form-control input-qty" id="beef-qty" min="0"
-                                            max="5" value="0" style="width: 200px;" onchange="beef()" />
-                                    </div>
+                                <form action="" id="beefForm">
+                                    <div class="row">
+                                        <div class="col-xl-6 mb-3">
+                                            <label for="beef-qty" class="fw-bold pb-2 qty">Quantity</label>
+                                            <input type="number" class="form-control input-qty text-center mx-auto"
+                                                id="beef-qty" min="0" max="5" value="0" style="width: 200px;"
+                                                onchange="beef()" />
+                                        </div>
 
-                                    <div>
-                                        <label for="beef-price" class="fw-bold text-start pb-2 price">Price</label>
-                                        <input type="number" id="beef-price" class="form-control input-qty"
-                                            value="269.45" disabled style="width: 200px;" />
+                                        <div class="col-xl-6 mb-3">
+                                            <label for="beef-price" class="fw-bold text-start pb-2 price">Price</label>
+                                            <input type="number" id="beef-price"
+                                                class="form-control input-qty text-center mx-auto" value="269.45"
+                                                disabled style="width: 200px;" />
+                                        </div>
                                     </div>
                                 </form>
 
@@ -258,17 +276,19 @@
                         </tr>
                         <tr scope="row" id="bulletProofVestDropdown" class="bg-white border-top d-none">
                             <td colspan="9" class="py-2">
-                                <form action="" id="vestForm" class="d-flex justify-content-between mx-5">
-                                    <div>
-                                        <label for="vest-qty" class="fw-bold pb-2 qty">Quantity</label>
-                                        <input type="number" class="form-control input-qty" id="vest-qty" min="0"
-                                            max="5" value="0" style="width: 200px;" onchange="vest()" />
-                                    </div>
+                                <form action="" id="vestForm">
+                                    <div class="row">
+                                        <div class="col-xl-6 mb-3">
+                                            <label for="vest-qty" class="fw-bold pb-2 qty">Quantity</label>
+                                            <input type="number" class="form-control input-qty text-center mx-auto" id="vest-qty" min="0"
+                                                max="5" value="0" style="width: 200px;" onchange="vest()" />
+                                        </div>
 
-                                    <div>
-                                        <label for="vest-price" class="fw-bold text-start pb-2 price">Price</label>
-                                        <input type="number" id="vest-price" class="form-control input-qty"
-                                            value="450.00" disabled style="width: 200px;" />
+                                        <div class="col-xl-6 mb-3">
+                                            <label for="vest-price" class="fw-bold text-start pb-2 price">Price</label>
+                                            <input type="number" id="vest-price" class="form-control input-qty mx-auto text-center "
+                                                value="450.00" disabled style="width: 200px;" />
+                                        </div>
                                     </div>
                                 </form>
 
@@ -290,7 +310,8 @@
                             </td>
                             <td colspan="4">
                                 <a class="btn btn-primary" href="#" role="button"
-                                    style="background-color: #ee8d7d; border: none; outline: none; font-size: 0.665em;" onclick="orderPlaced()">Order</a>
+                                    style="background-color: #ee8d7d; border: none; outline: none; font-size: 0.665em;"
+                                    onclick="orderPlaced()">Order</a>
                             </td>
                         </tr>
 
